@@ -121,3 +121,61 @@ Material complementar
 Primeira aula do curso “Java Polimorfismo: entenda herança e interfaces” da Alura.
 Apêndice da apostila “Java e Orientação a Objetos” da Alura sobre o pacote java.io que explica com mais detalhes a abstração InputStream.
 Divulgue seu projeto
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+AULA 03 - LIGANDO AS PONTAS, REFATORAÇÃO E ORIENTAÇÃO A OBJETOS
+Links, dicas e notas de aula
+Boas-vindas à terceira aula da Imersão Java!
+
+Chegou o momento de pegarmos os filmes do IMDb e gerar figurinhas com os pôsteres, aproveitando para melhorar nosso código com as refatorações necessárias para torná-lo mais flexível e fácil de entender.
+
+Código da Aula
+Clique aqui para acessar o código da aula.
+
+Links citados
+Documentação das APIs da NASA.
+API da Foto Astronômica do dia da NASA.
+Artigo na Alura “Como não aprender Java e Orientação a Objetos: getters e setters”.
+Livro “Design Patterns”, de 1994, que descreve soluções comuns para problemas recorrentes de como organizar seu código.
+Livro “Refactoring”, de 1999, que cataloga maneiras sistemáticas de melhorar o código sem modificar o que é feito.
+Serviços fora do ar?
+A Imersão está tão grande que estamos derrubando algumas APIs... Mas não se preocupe! Em nossa comunidade no Discord nós colocaremos alternativas e resoluções caso isso aconteça. Além disso, os alunos e alunas participando da Imersão também estão criando soluções para esses casos! É a comunidade da Imersão Java vivenciando um ambiente real de desenvolvimento!
+
+API da NASA 🌌
+Caso a API da NASA fique instável, use as seguintes URLs, que terão os mesmos dados usados na aula:
+
+(https://api.mocki.io/v2/549a5d8b/NASA-APOD)
+(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD.json)
+Além disso, deixamos uma URLs com imagens fantásticas do James Webb Space Telescope, como o primeiro deep field desse fantástico telescópio! TOPZERA! 🌠 ☄️ 🚀 🛰️ 🔭 🌌
+
+(https://api.mocki.io/v2/549a5d8b/NASA-APOD-JamesWebbSpaceTelescope)
+(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD-JamesWebbSpaceTelescope.json)
+API do IMDB instável
+Como a API do IMDB continua muito instável, vamos deixar algumas alternativas de API com um conteúdo semelhante para vocês:
+
+(https://api.mocki.io/v2/549a5d8b/Top250Movies)
+(https://api.mocki.io/v2/549a5d8b/MostPopularMovies)
+(https://api.mocki.io/v2/549a5d8b/MostPopularTVs)
+(https://api.mocki.io/v2/549a5d8b/Top250TVs)
+Segue também uma solução inspirada na que foi criada ontem pelo instrutor Alex Felipe:
+
+(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json)
+(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularMovies.json)
+(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularTVs.json)
+(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopTVs.json)
+Para utilizar os endereços alternativos, troque a URL da aula pelas novas URLs:
+
+// String url = "https://imdb-api.com/en/API/Top250Movies/k_0ojt0yvm";
+String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json";
+Desafios
+Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16
+Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP
+Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra
+Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado
+Desafio supremo: consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. Repositório com APIs públicas: clique aqui.
+Material complementar
+Artigo na Alura “Como não aprender Java e Orientação a Objetos: herança”.
+Podcast Hipsters.tech sobre Práticas de Orientação a Objetos.
+Podcast Hipsters.tech sobre Design Patterns.
+Podcast Hipsters.tech sobre SOLID.
